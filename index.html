@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentora - Guiding You to a Better Tomorrow</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script defer>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-blue-700 tracking-tight">Mentora</h1>
+      <div class="hidden md:flex space-x-8 font-medium">
+        <a href="#services" class="hover:text-blue-700 transition">Services</a>
+        <a href="#features" class="hover:text-blue-700 transition">Features</a>
+        <a href="#contact" class="hover:text-blue-700 transition">Contact</a>
+      </div>
+      <button class="md:hidden text-blue-700 text-2xl" onclick="toggleMenu()">☰</button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+      <a href="#services" class="block py-2">Services</a>
+      <a href="#features" class="block py-2">Features</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 px-6 bg-gradient-to-br from-blue-50 to-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-5xl font-extrabold text-blue-700 mb-6">Welcome to Mentora</h2>
+      <p class="text-xl text-gray-600 mb-6">Empowering individuals with personalized guidance in mental, career, financial, and organizational growth.</p>
+      <a href="#contact" class="inline-block bg-blue-700 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-800 transition">Download App</a>
+    </div>
+    <div class="mt-10">
+      <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_tfb3estd.json" background="transparent" speed="1" style="width: 300px; height: 300px; margin: 0 auto;" loop autoplay></lottie-player>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 px-6 bg-gray-100">
+    <h3 class="text-3xl font-bold text-center mb-12">Our Services</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+        <h4 class="text-xl font-semibold text-blue-600 mb-2">Mental Health</h4>
+        <p>Confidential and compassionate support from licensed professionals.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+        <h4 class="text-xl font-semibold text-blue-600 mb-2">Career Counseling</h4>
+        <p>Strategic career guidance for students, graduates, and working professionals.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+        <h4 class="text-xl font-semibold text-blue-600 mb-2">Financial Counseling</h4>
+        <p>Insights and planning for financial well-being and goal-setting.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+        <h4 class="text-xl font-semibold text-blue-600 mb-2">Organizational Services</h4>
+        <p>Tailored programs for schools, colleges, NGOs, and corporate clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 px-6">
+    <h3 class="text-3xl font-bold text-center mb-12">Key Highlights</h3>
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+      <ul class="space-y-5 text-lg">
+        <li>✔ Seamless booking experience</li>
+        <li>✔ One-on-one virtual counseling</li>
+        <li>✔ Secure verification and privacy</li>
+        <li>✔ Comprehensive support system</li>
+      </ul>
+      <ul class="space-y-5 text-lg">
+        <li>✔ Trusted professionals across fields</li>
+        <li>✔ Cross-platform accessibility</li>
+        <li>✔ Simple and intuitive user interface</li>
+        <li>✔ Fast and reliable communication</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-blue-50 text-center">
+    <h3 class="text-3xl font-bold mb-6">Connect With Us</h3>
+    <p class="text-lg mb-4">Have questions or want to partner with us? We’re here to help.</p>
+    <a href="mailto:contact@mentora.in" class="text-blue-700 text-lg underline hover:text-blue-900">akashkarkhal.23@gmail.com</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-gray-800 text-white text-sm">
+    &copy; 2025 Mentora. All rights reserved.
+  </footer>
+</body>
+</html>
